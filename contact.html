@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>WEB222 Store - Contact</title>
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/bcc24e8464.js" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+    </head>
+    <body>
+                    <nav id="navig">
+                        <a href="./index.html"><img id="navlogo" src="./images/logo.png"></a>
+                        <div id="searchbar">
+                          <form>
+                            <input type="text" placeholder="Search here" id="searchbarinput">
+                          </form>
+                          <i class="fas fa-search" id="searchbutton"></i>
+                        </div>
+                      <h2 id="cont"><a href="./contact.html">Contact</a></h2>
+                    </nav>
+                    <div id="titleforweb">
+                      <img src="./images/banner.jpg">
+                      <h1 class="titlename">TIMEBEANSs</h1>
+                    </div>
+                  </header>
+            <form id="data" action="https://httpbin.org/post" method="POST" >
+                <fieldset id="field">
+                  <label for="name">Name</label><br>
+                  <input id="conus" name="name" type="text" maxlength="30" tabindex="1" pattern="^[a-zA-Z]+$" required autofocus><br><br>
+                  <label for="surname">Last Name</label><br>
+                  <input id="last" name="surname" type="text" tabindex="2" pattern="^[a-zA-Z]+$" required><br><br>
+                  <label for="email">Email</label><br>
+                  <input name="email" type="email" tabindex="3" required><br><br>
+                  <label for="street">Street</label><br>
+                  <input id="street" name="street" type="text" tabindex="4" required><br><br>
+                  <label for="city">City</label><br>
+                  <input id="city" name="city" list="cities" type="text" tabindex="5" required><br><br>
+                  <datalist id="cities">
+                      <option value="Brampton"></option>
+                      <option value="Toronto"></option>
+                      <option value="North York"></option>
+                      <option value="Surrey"></option>
+                      <option value="Scarborough"></option>
+                  </datalist>
+                  <label for="phone">Phone Number</label><br>
+                  <input id="phone" name="phone" type="tel" tabindex="6" pattern="^\(?\d{3}\)?[ .-]?\d{3}[ .-]?\d{4}$" required><br><br>
+                  <label for="postal">Postal Code</label><br>
+                  <input name="postal" type="text" tabindex="7" pattern="^[a-zA-Z]{1}\d{1}[a-zA-Z]{1}[ -]?\d{1}[a-zA-Z]{1}\d{1}" required><br><br>
+                  <label for="ques">Would you liked to be phoned?</label><br>
+                  <input name="ques" type="radio" checked tabindex="8">Yes</input>
+                  <input name="ques" type="radio" tabindex="9">No</input><br><br>
+                  <textarea id="textarea" tabindex="10" required></textarea><br><br>
+                  <input type="submit" id="submission" tabindex="11" value="Submit"></input><br>
+                  <input type="text" placeholder="Aashu Batra" hidden>
+                  <input type="text" placeholder="144179181" hidden>
+                </fieldset>
+            </form>
+            <footer>
+              <div>
+              <span>TIMEBEANS</span><br>
+              <form action="" method="POST" id="form1">
+                <label for="news">Do you wanna subscribe to our weekly promtions?</label>
+                <input type="email" name="news" placeholder="xyz@example.com" required><br>
+                <input type="submit" id="sub" value="Submit"><br><br>
+              </form>
+              <text>Instagram @timebeans</text>
+            </div>
+            </footer>
+        </body>
+</html>

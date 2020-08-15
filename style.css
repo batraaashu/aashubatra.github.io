@@ -1,0 +1,238 @@
+/** Add any CSS you need to this file. */
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background: linear-gradient(45deg, #9d9a8b, #e6dfd8);
+    z-index: 3;
+}
+#main{
+    background: linear-gradient(45deg, #9d9a8b, #e6dfd8);
+    display: flex;
+    flex: 2;
+}
+#navig{
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    flex: .20;
+    display: flex;
+    background:rgba(20, 20, 20, 0.85);
+    z-index: 2;
+}
+#navlogo{
+    flex: .10;
+    height: 70px;
+}
+#cont{
+    font-family: 'Baskervville', serif;
+    color: whitesmoke;
+    flex: 0.5;
+    text-align: right;
+    padding-right: 20px;
+}
+#cont a{
+    color: whitesmoke;
+    font-family: 'Baskervville', serif;
+    text-decoration:none;
+    padding:10px;
+    border-radius:5px;
+    line-height: 30px;
+}
+#cont a:hover{
+    background-color:lightgrey;
+    color:black;
+}
+#searchbar{
+    margin-top: 19px;
+    height: 100%;
+    width: 100%;
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#searchbarinput{
+    padding: 10px;
+    border:0;
+    margin:0;
+    width: 50em;
+    background: white;
+    border-radius: 25px 0px 0px 25px;
+}
+#searchbutton{
+    cursor: pointer;
+    padding: 10px;
+    border:0;
+    border-radius: 0px 25px 25px 0px;
+    margin: 0;
+    color: #000 ;
+    background: whitesmoke;  
+    
+}
+#sidebar{
+    background: linear-gradient(45deg, #a48c68, #8d6e51);
+    flex: 0.20;
+}
+#selling{
+    background: linear-gradient(45deg, #9d9a8b, #e6dfd8);
+    text-align: center;
+    flex: 1;
+}
+#foot{
+    flex: 0.60;
+}
+.hidden{
+    display: hidden;
+}
+#sidebarname{
+    margin: 0;
+    font-size: 38px;
+    padding-top: 0%;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+}
+#sidebar:hover{
+    z-index:100;
+    box-shadow: 2.5px 2.5px #888888;
+}
+#sidebaranalog{
+    font-family: 'Playfair Display SC', serif;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 19px;
+}
+#sidebarsmart{
+    font-family: 'Playfair Display SC', serif;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 19px;
+}
+footer div{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+#selling div{
+    display: inline-block;
+    height: 15em;
+    width: 20em;
+    margin: 1em;
+    overflow: hidden;
+    background: rgba(25, 25, 25, 0.65);
+    text-align: left;
+}
+#titleforweb img{
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    margin-bottom: -4px;
+}
+#selling div:hover{
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px #888888;
+}
+#selling div img{
+    height: 80%;
+    width: 100%;
+}
+#selling div text{
+    padding-left: 10px;
+    color: white;
+}
+#field{
+
+    text-align: center;
+    top: 0;
+    left: 0;
+    margin: 80px 40px 80px 40px;
+    background: lightgray;
+}
+#textarea{
+    height: 90px;
+}
+#submission{
+    height: 25px;
+    width: 120px;
+}
+#sidebar h6{
+    text-align: center;
+    cursor: pointer;
+}
+#sidebar h6:hover{
+    background-color:lightgrey;
+    color:black;
+}
+#selling div.hidden{
+    display: none;
+}
+#titleforweb{
+    font-family: cursive;
+    text-align: center;
+    flex:.35;
+    margin: 0;
+    position: relative;
+}
+#titleforweb .titlename{
+    height: 100px;
+    font-family: 'Baskervville','Alatsi', sans-serif;
+    position: absolute;
+    bottom: 40px;
+    font-weight:600;
+    width:100%;
+    font-size:4em;
+    text-align: center;
+    color: #d9e3e3;
+    text-shadow: 2px 2px 8px black;
+}
+footer{
+    background: #010038;
+    display:flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+footer form{
+    text-align: right;
+}
+footer form input{
+    margin-right: 2px;
+    border-radius: 5px;
+}
+footer form #sub{
+    margin-top: 5px;
+    margin-right: 100px;
+}
+form label{
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: 500;
+}
+fieldset{
+    width:40em;
+    margin: auto;
+}
+#data{
+    margin: auto;
+}
+.itm{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.desc{
+    font-family: 'Merriweather', serif;
+}
+.pad_rad{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid darkgray;
+    margin-top: 1px;
+}
